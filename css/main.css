@@ -1,4 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 body {
-  background-color: blueviolet;
+  font-family: "Roboto", sans-serif;
+  color: var(--pr-col-txt);
+}
+
+.conteiner {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=main.css.map */
