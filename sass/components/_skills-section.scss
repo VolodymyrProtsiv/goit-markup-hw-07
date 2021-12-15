@@ -1,0 +1,78 @@
+
+  
+  .list__skills {
+    display: flex;
+  }
+  .skills-list-items {
+    width: 270px;
+  }
+  
+  .skills-list-items:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .skills-list-items::before {
+    display: block;
+    content: "";
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--bg-lightgrey-col);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* Befor icond */
+  .icon-locator::before {
+    content: "";
+  
+    background-image: url(../img/antenna.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+  }
+  
+  .icon-clock::before {
+    content: "";
+  
+    background-image: url(../img/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+  }
+  
+  .icon-laptop::before {
+    content: "";
+  
+    background-image: url(../img/diagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+  }
+  .icon-spaceman::before {
+    content: "";
+  
+    background-image: url(../img/astronaut.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+  }
+  
+  .skills-list-items-tittle {
+    margin-bottom: 10px;
+  
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    /* background-color: var(--bg-lightgrey-coll); */
+    color: var(--pr-col-txt);
+  }
+  .skills-list-items-par {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--second-col-txt);
+  }

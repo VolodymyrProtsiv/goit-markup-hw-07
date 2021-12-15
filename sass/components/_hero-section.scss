@@ -1,8 +1,5 @@
 .hero__sect {
-    height: 600px;
-    max-width: 1600px;
-    padding: 200px 0px;
-    margin: 0 auto;
+    
   
     background-image: linear-gradient(
         to right,
@@ -16,6 +13,13 @@
     background-repeat: no-repeat;
   
     background-color: var(--bg-second-col);
+
+    &--size{
+      height: 600px;
+    max-width: 1600px;
+    padding: 200px 0px;
+    margin: 0 auto;
+    }
   }
   
  
