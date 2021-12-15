@@ -1,0 +1,21 @@
+.btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    text-align: center;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    background-color: var(--accent-col);
+    color: var(--bg-pr-col);
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px var(--sw-btn);
+  
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &:hover,
+  &:focus {
+    background-color: var(--hover-btn-col);
+    box-shadow: 0px 4px 4px var(--sw-btn);
+  }
+}
