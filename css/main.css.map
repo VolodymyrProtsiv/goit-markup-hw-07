@@ -19,7 +19,8 @@
         "../sass/components/_hero-section.scss",
         "../sass/components/_skills-section.scss",
         "../sass/components/_do-section.scss",
-        "../sass/components/_our-team.scss"
+        "../sass/components/_our-team.scss",
+        "../sass/components/_ours-clients.scss"
     ],
     "names": [],
     "file": "main.css"
