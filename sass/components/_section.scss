@@ -2,7 +2,15 @@
     background-color: var(--bg-pr-col);
 
 
-    &--skills {
+    &--size {
         padding: 94px 0px;
+      }
+
+    &__do--size {
+        padding-bottom: 94px;
+      }  
+
+    &__team {
+        background-color: var(--bg-lightgrey-col);
       }
 }
