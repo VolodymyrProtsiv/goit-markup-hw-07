@@ -131,6 +131,29 @@ body {
   background-color: var(--accent-col);
 }
 
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  border-radius: 4px;
+  background-color: var(--accent-col);
+  color: var(--bg-pr-col);
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 4px 4px var(--sw-btn);
+          box-shadow: 0px 4px 4px var(--sw-btn);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover, .btn:focus {
+  background-color: var(--hover-btn-col);
+  -webkit-box-shadow: 0px 4px 4px var(--sw-btn);
+          box-shadow: 0px 4px 4px var(--sw-btn);
+}
+
 .header {
   position: relative;
   background-color: var(--bg-pr-col);
@@ -160,18 +183,18 @@ body {
   position: relative;
 }
 
-.contact-list {
+.list__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
 }
 
-.contact-list-item:not(:last-child) {
+.list__contact--item:not(:last-child) {
   margin-right: 50px;
 }
 
-.list-item-contact {
+.link__item--contact {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -183,20 +206,21 @@ body {
   color: var(--second-col-txt);
 }
 
-.icon-postbox {
+.icon__postbox {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.icon-mobtel {
+.icon__postbox:hover, .icon__postbox:focus {
+  color: var(--hover-btn-col);
+}
+
+.icon__mobtel {
   fill: currentColor;
   margin-right: 10px;
 }
 
-.icon-postbox:hover,
-.icon-postbox:focus,
-.icon-mobtel:hover,
-.icon-mobtel:focus {
+.icon__mobtel:hover, .icon__mobtel:focus {
   color: var(--hover-btn-col);
 }
 /*# sourceMappingURL=main.css.map */
