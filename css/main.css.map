@@ -12,7 +12,8 @@
         "../sass/components/_logo.scss",
         "../sass/components/_active.scss",
         "../sass/components/_btn.scss",
-        "../sass/components/_header.scss"
+        "../sass/components/_header.scss",
+        "../sass/components/_hero-section.scss"
     ],
     "names": [],
     "file": "main.css"
