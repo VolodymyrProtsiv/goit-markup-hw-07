@@ -93,11 +93,14 @@
 
 
 
-  .modal-form-textarea {
+  .textarea__modal__form {
     position: relative;
-    margin-bottom: 20px;
+    &--size{
+      margin-bottom: 20px;
+    }
+    
   }
-  .modal-textarea {
+  .textarea__modal {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -108,49 +111,51 @@
   
     cursor: pointer;
   
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border var(--pr-transition);
   
     resize: none;
+
+      &:focus,
+      &:hover {
+      border: 1px solid var(--accent-col);
+    }
+    &::placeholder {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: 0.01em;
+    
+      color: rgba(117, 117, 117, 0.5);
+    }
   }
-  .modal-textarea:focus,
-  .modal-textarea:hover {
-    border: 1px solid var(--accent-col);
-  }
-  .modal-textarea::placeholder {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
   
-    color: rgba(117, 117, 117, 0.5);
-  }
   
-  .modal-lable-textarea {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-20px);
+  // .modal-lable-textarea {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   transform: translateY(-20px);
   
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
+  //   font-weight: normal;
+  //   font-size: 12px;
+  //   line-height: 1.2;
+  //   letter-spacing: 0.01em;
   
-    cursor: pointer;
+  //   cursor: pointer;
   
-    color: var(--second-col-txt);
-  }
+  //   color: var(--second-col-txt);
+  // }
   
   
   
  
   
-  .modal-checkbox {
+  .modal__checkbox {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    
   
     font-style: normal;
     font-weight: normal;
@@ -159,21 +164,61 @@
     letter-spacing: 0.03em;
   
     color: var(--second-col-txt);
-  }
-  .modal-checkbox-title {
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    margin: -1px;
+
+    &--size{
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+       height: 1px;
+       overflow: hidden;
+      border: 0;
+       padding: 0;
+       clip: rect(0 0 0 0);
+       clip-path: inset(50%);
+       margin: -1px;
+  
+       &:checked + .checkbox__icon {
+        background-color: var(--hover-btn-col);
+        border-color: var(--hover-btn-col);
+        background-image: url(../img/chek-icon.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-origin: content-box;
+      }
+     }
+
+     &--title__par {
+      margin-right: 5px;
+    
+      cursor: pointer;
+    }
+
+    &__title__link {
+      color: var(--accent-col);
+      cursor: pointer;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus,
+      &:hover {
+      color: var(--hover-btn-col);
+      }
+
+      
+    }
+    &--title__par {
+      margin-right: 5px;
+    
+      cursor: pointer;
+    }
+    
   }
   
-  .checkbox-icon {
+  
+  .checkbox__icon {
     width: 16px;
     height: 15px;
     margin-right: 9px;
@@ -184,38 +229,22 @@
   
     border: 2px solid var(--pr-col-txt);
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .checkbox-icon:focus,
-  .checkbox-icon:hover {
+
+    &:focus,
+    &:hover {
     border: 2px solid var(--accent-col);
+    
+    }
   }
+
   
-  .modal-checkbox-title:checked + .checkbox-icon {
-    background-color: var(--hover-btn-col);
-    border-color: var(--hover-btn-col);
-    background-image: url(../img/chek-icon.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: content-box;
-  }
   
-  .modal-checkbox-title-par {
-    margin-right: 5px;
   
-    cursor: pointer;
-  }
   
-  .modal-checkbox-title-link {
-    color: var(--accent-col);
-    cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .modal-checkbox-title-link:focus,
-  .modal-checkbox-title-link:hover {
-    color: var(--hover-btn-col);
-  }
+  
+  
+  
+  
   
   .btn-modal {
     display: block;
