@@ -31,6 +31,15 @@
       &:focus {
     background-color: var(--accent-col);
     color: var(--bg-pr-col);
+
+    &__footer{
+      background-color: var(--footer-pr-icon);
+
+    }
+
+
+
+    
   }
   }
   .social__icon {
