@@ -32,8 +32,7 @@
   
     cursor: pointer;
   
-    transition: color  --pr-transition,
-      border  --pr-transition;
+    transition: color var(--pr-transition) , border  var(--pr-transition);
 
       &:focus,
       &:hover {
