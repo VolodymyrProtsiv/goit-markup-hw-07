@@ -138,13 +138,12 @@ body {
   color: var(--pr-col-txt);
 }
 
-.logo--header__chapter--footer {
+.logo--footer {
   display: block;
   margin-bottom: 20px;
-  color: var(--bg-pr-col);
 }
 
-.logo-footer {
+.logo--footer__chapter {
   color: var(--bg-pr-col);
 }
 

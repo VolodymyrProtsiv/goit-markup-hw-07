@@ -11,24 +11,22 @@
     display: block;
     padding: 24px 0px;
     margin-right: 93px;
-}
+    }
    &--header__chapter{
     color: var(--pr-col-txt);
-
-    &--footer {
-        display: block;
-        margin-bottom: 20px;
-
-        color: var(--bg-pr-col);
-      }
-}
-
-}
- .logo-footer {
-//     font-family: Raleway;
-//     font-weight: bold;
-//     font-size: 26px;
-//     line-height: 1.2x;
-//     letter-spacing: 0.03em;
-    color: var(--bg-pr-col);
    }
+  &--footer{
+
+    display: block;
+    margin-bottom: 20px
+  }
+
+  &--footer__chapter{
+    color: var(--bg-pr-col);
+  }
+    
+}
+
+
+
+
