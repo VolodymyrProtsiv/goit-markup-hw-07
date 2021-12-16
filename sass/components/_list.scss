@@ -1,3 +1,7 @@
 .list {
     list-style: none;
+
+    &__footer--item:not(:last-child) {
+      margin-bottom: 9px;
+    }
   }
