@@ -16,6 +16,15 @@
       align-items: baseline;
       
     }
+
+    &__footer__form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__social__network {
+      margin-right: auto;
+    }
 }
 
 

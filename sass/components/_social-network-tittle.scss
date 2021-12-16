@@ -1,0 +1,15 @@
+ .social__network__tittle {
+
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: var(--bg-pr-col);
+
+    &--size{
+        margin-bottom: 20px;
+    }
+
+  }
