@@ -1030,21 +1030,24 @@ body {
   background-color: var(--bg-pr-col);
 }
 
-.filtr-list {
+.list__filtr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.list__filtr--size {
   margin-bottom: 50px;
 }
 
-.filtr-list-item {
+.list__filtr--size__item {
   margin-right: 8px;
 }
 
-.filtr-list-item:nth-child(5n) {
+.list__filtr--size__item:nth-child(5n) {
   margin-right: 0;
 }
 

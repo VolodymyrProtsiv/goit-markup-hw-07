@@ -4,17 +4,22 @@
     background-color: var(--bg-pr-col);
   }
   
-  .filtr-list {
+  .list__filtr {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+
+    &--size{
+        margin-bottom: 50px;
+    }
+    &--size__item{
+        margin-right: 8px;
+    }
+    &--size__item:nth-child(5n) {
+        margin-right: 0;
+      }
   }
-  .filtr-list-item {
-    margin-right: 8px;
-  }
-  .filtr-list-item:nth-child(5n) {
-    margin-right: 0;
-  }
+ 
+  
   
   /* Btn-portfolio */
   
