@@ -1,0 +1,31 @@
+/* PORTFOLIO  */
+.section__filtr {
+    
+    background-color: var(--bg-pr-col);
+  }
+  
+  .list__filtr {
+    display: flex;
+    justify-content: center;
+
+    &--size{
+        margin-bottom: 50px;
+    }
+    &--size__item{
+        margin-right: 8px;
+    }
+    &--size__item:nth-child(5n) {
+        margin-right: 0;
+      }
+  }
+ 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
