@@ -2,28 +2,31 @@
 .list__pl__tittle {
     display: flex;
     flex-wrap: wrap;
-  }
-  &__item {
+  
+    &__item {
     position: relative;
   
     width: 370px;
     border: 1px solid var(--hed-sol-col);
     
 
-    &--size{
-      margin-right: 30px;
-      margin-bottom: 30px;
-    }
+      &--size{
+        margin-right: 30px;
+        margin-bottom: 30px;
+      }
 
-    &:nth-child(3n) {
-      margin-right: 0;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
     }
   }
+
   
   .link__portfolio {
     display: inline-block;
     transition: box-shadow var(--pr-transition);
   }
+
   .portfolio__cards {
     position: relative;
   
