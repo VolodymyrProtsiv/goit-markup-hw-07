@@ -450,11 +450,11 @@
                         <input type="Email" name="Email"  placeholder="Email"  class="footer__input">
                     </label>
                         <button type="submit" class="btn btn__footer__form  btn__footer__form--size">Подписаться
-                            <div class="footer-icon-conteiner">
+                            
                                 <svg class="icon-send" width="24" height="24">
                                     <use href="./img/icon.svg#icon-icon-send"></use>
                                 </svg>
-                            </div>
+                           
                         </button>
                 </form>
             </div>
@@ -476,7 +476,7 @@
                 <!-- <ul class="modal-form-list list"> -->
                     <div class="conteiner__modal__form conteiner__modal__form--size">
                         <label class="modal__lable modal__lable--size" for="use_name" >Имя</label>
-                        <input type="name" name="name" id="use_name" class="modal__input" />
+                        <input type="text" name="name" id="use_name" class="modal__input" />
                         <svg class="modal__icon" width="18" height="18" >
                             <use href="./img/icon.svg#icon-person-black" ></use>
                         </svg>
@@ -498,16 +498,17 @@
                     </div>
                 
                     <div class="textarea__modal__form  textarea__modal__form--size">
-                        <label class="modal__lable modal__lable--size" for="use_feedback" >Комментарий</label> <!--class="modal-lable"-->
+                        <label class="modal__lable modal__lable--size"  >Комментарий</label> <!--class="modal-lable"-->
                         <textarea name="feedback" id="feedback" cols="30" rows="5" 
                         placeholder="Введите текст"  class="textarea__modal"></textarea>
                     </div>
 
                 
                 <label class="modal__checkbox modal__checkbox--size">
+                   
                     <input type="checkbox" class="modal__checkbox__title"  >
                     <span class="checkbox__icon"></span>
-                    <p class="modal__checkbox--title__par">Соглашаюсь с рассылкой и принимаю</p>
+                    <span class="modal__checkbox--title__par">Соглашаюсь с рассылкой и принимаю</span>
                     <a href="" class="modal__checkbox__title__link">Условия договора</a>
                 </label>
                 
@@ -519,7 +520,7 @@
      <script src="./js/modal.js"></script>  
     
     
-          
+      
 
   </body>
 </html>

@@ -152,6 +152,7 @@
  
   
   .modal__checkbox {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -171,15 +172,22 @@
 
     &__title {
       position: absolute;
+      display: inline-flex;
+      top:8.5px;
+      left:12.5px;
+      
+    
       white-space: nowrap;
-      width: 1px;
-       height: 1px;
-       overflow: hidden;
-      border: 0;
-       padding: 0;
-       clip: rect(0 0 0 0);
-       clip-path: inset(50%);
-       margin: -1px;
+         width: 1px;
+          height: 1px;
+         
+          border: 0;
+           padding: 0;
+           clip: rect(0 0 0 0);
+          
+         
+
+       
   
        &:checked + .checkbox__icon {
         background-color: var(--hover-btn-col);
@@ -189,9 +197,10 @@
         background-repeat: no-repeat;
         background-position: center;
         background-origin: content-box;
+        
       }
      }
-
+     
      &--title__par {
       margin-right: 5px;
     
@@ -237,9 +246,6 @@
     }
   }
 
-  
-  
-  
   
   
   
