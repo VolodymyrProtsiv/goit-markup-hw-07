@@ -657,14 +657,17 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  top: 8.5px;
-  left: 12.5px;
   white-space: nowrap;
   width: 1px;
   height: 1px;
-  border: 0;
+  border: 1px;
   padding: 0;
   clip: rect(0 0 0 0);
+}
+
+.modal__checkbox__title:focus + .checkbox__icon,
+.modal__checkbox__title:hover + .checkbox__icon {
+  border: 2px solid var(--accent-col);
 }
 
 .modal__checkbox__title:checked + .checkbox__icon {
